@@ -1,38 +1,89 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrap{
+  border: thin grey solid;
+  width: 30%;
+  margin: auto;
+}
+
+header{
   text-align: center;
+  padding: 0.7em;
+  color: black;
+  border-bottom: thin grey solid;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2em;
+  text-transform: uppercase;
+  background-color: cadetblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main{
+  /* border: thin green solid; */
+  background-color: rgb(254, 249, 228);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-group{
+  /* background-color: bisque; */
   display: flex;
-  flex-direction: column;
+  padding: 1em;
+  border-bottom: thin grey solid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task-group input{
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-group label{
+  display: block;
+  flex: 1 0 auto;
+  padding-left: 1em;
+  color: black;
+  font-size: 1.5em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.task-group button{
+  color: grey;
+  background-color: rgb(254, 249, 228);
+}
+
+.new-task-group{
+  padding: 1em;
+}
+
+form{
+  display: flex;
+}
+
+button{
+  border: none;
+  border-radius: 5em;
+  background-color: rgb(254, 249, 228);
+  color: grey;
+  font-size: 1.8em;
+  padding-left: 0.15em;
+}
+
+.form-group{
+  /* border: thin red solid; */
+  padding-left: 1.1em;
+}
+
+.form-group input{
+  border: none;
+  padding: 0.5em;
+  /* padding-left: 1em; */
+  font-size: 1em;
+  font-family: 'Roboto Mono', monospace;
+  background-color: rgb(254, 249, 228);
+  outline: none;
 }
